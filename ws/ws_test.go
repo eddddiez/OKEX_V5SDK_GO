@@ -2,10 +2,10 @@ package ws
 
 import (
 	"fmt"
+	. "github.com/eddddiez/OKEX_V5SDK_GO/ws/wImpl"
 	"log"
 	"testing"
 	"time"
-	. "v5sdk_go/ws/wImpl"
 
 	"github.com/stretchr/testify/assert"
 )
@@ -218,7 +218,7 @@ func TestWsClient_Jrpc(t *testing.T) {
 }
 
 /*
-	测试 添加全局消息回调函数
+测试 添加全局消息回调函数
 */
 func TestAddMessageHook(t *testing.T) {
 
@@ -235,7 +235,7 @@ func TestAddMessageHook(t *testing.T) {
 }
 
 /*
-	普通推送数据回调函数
+普通推送数据回调函数
 */
 func TestAddBookedDataHook(t *testing.T) {
 	var r *WsClient
@@ -313,7 +313,6 @@ func TestGetInfoFromErrMsg(t *testing.T) {
 }
 
 /*
-
  */
 func TestParseMessage(t *testing.T) {
 	r := prework()
@@ -329,7 +328,7 @@ func TestParseMessage(t *testing.T) {
 }
 
 /*
-	原始方式 深度订阅 测试
+原始方式 深度订阅 测试
 */
 func TestSubscribeTBT(t *testing.T) {
 	r := prework()
@@ -361,7 +360,6 @@ func TestSubscribeTBT(t *testing.T) {
 }
 
 /*
-
  */
 func TestSubscribeBalAndPos(t *testing.T) {
 	r := prework_pri(CROSS_ACCOUNT)
