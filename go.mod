@@ -1,4 +1,4 @@
-module github.com/eddddiez/v5sdk_go
+module github.com/eddddiez/OKEX_V5SDK_GO
 
 go 1.19
 
